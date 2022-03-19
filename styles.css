@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /*background: linear-gradient(to bottom right, rgb(123, 186, 222), rgb(83,162,216), rgb(70, 116, 176), rgb(25, 72, 133));*/
+    background-image: url(./mesh-gradient-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fundo 10s infinite alternate;
+    color: #fff;
+}
+
+@keyframes fundo {
+    0% {
+        background-image: url(./mesh-gradient-2.png);
+    }
+    50%{
+        background-image: url(./mesh-gradient.png);
+    }
+}
+
+#title{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.cali{
+    color: rgb(249, 249, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 7rem;
+    font-weight: 300;
+    
+}
+
+.subtitle{
+    color: rgb(53, 104, 199);
+    font-family: 'roboto', sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-left: 49%;
+}
+
+.nav{
+    position: absolute;
+    margin-left: 17%;
+    margin-top: 25%;
+    list-style: none;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+.menu{
+    text-decoration: none;
+    margin: 1rem;
+    cursor: pointer;
+    
+}
+
+.menu:after{
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    height: 2.8px;
+    width: 0;
+    margin-top: 9.5%;
+    left: -70%;
+    transition: 0.3s;
+    
+}
+
+.menu:hover{
+    color: aqua;
+}
+
+.menu:hover:after{
+    width: 100px;
+}
+
+.logo{
+    color: aqua;
+    width: 35%;
+    padding: 5%;
+    margin-left: 60%;
+}
+
