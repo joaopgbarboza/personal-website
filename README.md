@@ -1,5 +1,4 @@
-FINCO is a small accounting consultant based in Brazil.
-The project was developed following some references sent by the client who wanted a simple and minimalist concept.
+This is just a (unfinished) small personal website project to practice web development
 
 Tools used:
 #HTML 
