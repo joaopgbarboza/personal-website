@@ -18,12 +18,17 @@ body {
 
 @keyframes fundo {
     0% {
+        animation: 3s infinite ease-in;  
         background-image: url(./mesh-gradient-2.png);
+
     }
     50%{
+        animation: 3s infinite ease-in; 
         background-image: url(./mesh-gradient.png);
+
     }
 }
+
 
 #title{
     position: absolute;
