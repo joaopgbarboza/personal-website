@@ -7,12 +7,13 @@
 body {
     width: 100%;
     height: 100vh;
-    /*background: linear-gradient(to bottom right, rgb(123, 186, 222), rgb(83,162,216), rgb(70, 116, 176), rgb(25, 72, 133));*/
+    background: linear-gradient(to bottom right, rgb(123, 186, 222), rgb(83,162,216), rgb(70, 116, 176), rgb(25, 72, 133));
     background-image: url(./mesh-gradient-2.png);
     background-repeat: no-repeat;
     background-size: cover;
     animation: fundo 10s infinite alternate;
     color: #fff;
+    text-decoration: none;
 }
 
 @keyframes fundo {
@@ -54,6 +55,7 @@ body {
     list-style: none;
     font-family: 'roboto', sans-serif;
     font-size: 1.3rem;
+    text-decoration: none;
 }
 
 .menu{
@@ -72,7 +74,7 @@ body {
     margin-top: 9.5%;
     left: -70%;
     transition: 0.3s;
-    
+    text-decoration: none;
 }
 
 .menu:hover{
@@ -81,6 +83,16 @@ body {
 
 .menu:hover:after{
     width: 100px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+    color: aqua;
 }
 
 .logo{
