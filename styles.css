@@ -1,63 +1,140 @@
+<<<<<<< HEAD
+* {
+=======
 *{
+>>>>>>> cf1dd279c9c142b81ec36d7ede83bfbf914b2222
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+html, body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+=======
 body {
     width: 100%;
     height: 100vh;
+>>>>>>> cf1dd279c9c142b81ec36d7ede83bfbf914b2222
     background: linear-gradient(to bottom right, rgb(123, 186, 222), rgb(83,162,216), rgb(70, 116, 176), rgb(25, 72, 133));
     background-image: url(./mesh-gradient-2.png);
     background-repeat: no-repeat;
     background-size: cover;
+<<<<<<< HEAD
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Pseudo-element for background transition */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./mesh-gradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    animation: fundo 5s infinite alternate;
+=======
     animation: fundo 10s infinite alternate;
     color: #fff;
     text-decoration: none;
+>>>>>>> cf1dd279c9c142b81ec36d7ede83bfbf914b2222
 }
 
 @keyframes fundo {
     0% {
-        background-image: url(./mesh-gradient-2.png);
+<<<<<<< HEAD
+        opacity: 0;
     }
-    50%{
-        background-image: url(./mesh-gradient.png);
+    100% {
+        opacity: 1;
     }
 }
 
+#title {
+=======
+        animation: 3s infinite ease-in;  
+        background-image: url(./mesh-gradient-2.png);
+
+    }
+    50%{
+        animation: 3s infinite ease-in; 
+        background-image: url(./mesh-gradient.png);
+
+    }
+}
+
+
 #title{
+>>>>>>> cf1dd279c9c142b81ec36d7ede83bfbf914b2222
     position: absolute;
     margin-left: 10%;
     margin-top: 10%;
 }
 
+<<<<<<< HEAD
+.cali {
+=======
 .cali{
+>>>>>>> cf1dd279c9c142b81ec36d7ede83bfbf914b2222
     color: rgb(249, 249, 255);
     font-family: 'Roboto', sans-serif;
     font-size: 7rem;
     font-weight: 300;
+<<<<<<< HEAD
+}
+
+.subtitle {
+    color: rgb(53, 104, 199);
+    font-family: 'Roboto', sans-serif;
+=======
     
 }
 
 .subtitle{
     color: rgb(53, 104, 199);
     font-family: 'roboto', sans-serif;
+>>>>>>> cf1dd279c9c142b81ec36d7ede83bfbf914b2222
     font-style: italic;
     font-size: 2rem;
     font-weight: 300;
     padding-left: 49%;
 }
 
+<<<<<<< HEAD
+.nav {
+=======
 .nav{
+>>>>>>> cf1dd279c9c142b81ec36d7ede83bfbf914b2222
     position: absolute;
     margin-left: 17%;
     margin-top: 25%;
     list-style: none;
+<<<<<<< HEAD
+    font-family: 'Roboto', sans-serif;
+=======
     font-family: 'roboto', sans-serif;
+>>>>>>> cf1dd279c9c142b81ec36d7ede83bfbf914b2222
     font-size: 1.3rem;
     text-decoration: none;
 }
 
+<<<<<<< HEAD
+.menu {
+    text-decoration: none;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.menu:after {
+=======
 .menu{
     text-decoration: none;
     margin: 1rem;
@@ -66,6 +143,7 @@ body {
 }
 
 .menu:after{
+>>>>>>> cf1dd279c9c142b81ec36d7ede83bfbf914b2222
     content: "";
     position: absolute;
     background-color: aqua;
@@ -77,6 +155,17 @@ body {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
+.menu:hover {
+    color: aqua;
+}
+
+.menu:hover:after {
+    width: 100px;
+}
+
+a {
+=======
 .menu:hover{
     color: aqua;
 }
@@ -86,19 +175,87 @@ body {
 }
 
 a{
+>>>>>>> cf1dd279c9c142b81ec36d7ede83bfbf914b2222
     color: #fff;
     text-decoration: none;
 }
 
+<<<<<<< HEAD
+a:visited {
+    text-decoration: none;
+    color: rgb(9, 255, 0);
+}
+
+.logo {
+=======
 a:visited{
     text-decoration: none;
     color: aqua;
 }
 
 .logo{
+>>>>>>> cf1dd279c9c142b81ec36d7ede83bfbf914b2222
     color: aqua;
     width: 35%;
     padding: 5%;
     margin-left: 60%;
 }
 
+<<<<<<< HEAD
+/* Responsive Design */
+
+/* For screens less than 800px */
+@media (max-width: 800px) {
+    .cali {
+        font-size: 5rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        padding-left: 30%;
+    }
+
+    .nav {
+        font-size: 1rem;
+        margin-left: 10%;
+        margin-top: 35%;
+    }
+
+    .menu {
+        margin: 0.8rem;
+    }
+
+    .logo {
+        width: 50%;
+        margin-left: 50%;
+    }
+}
+
+/* For screens less than 360px */
+@media (max-width: 400px) {
+    .cali {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        padding-left: 5%;
+    }
+
+    .nav {
+        font-size: 1.2rem;
+        margin-left: 7%;
+        margin-top: 40%;
+    }
+
+    .menu {
+        margin: 0.5rem;
+    }
+
+    .logo {
+        width: 60%;
+        margin-left: 50%;
+    }
+}
+=======
+>>>>>>> cf1dd279c9c142b81ec36d7ede83bfbf914b2222
