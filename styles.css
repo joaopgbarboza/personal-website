@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 /* Full-screen background */
 .background {
@@ -11,6 +12,7 @@
     width: 100vw;
     height: 100vh;
     z-index: -1;
+    overflow-x: hidden;
     
     /* Smooth gradient animation */
     background: linear-gradient(120deg, #FF00CC, #8400FF, #00FFB2);
@@ -120,7 +122,7 @@ a:hover{
     border-style: none;
     border-radius: 4rem;
     background: linear-gradient( #443E3E, #1B1B1B);
-    min-height: 620px;
+    min-height: 634px;
 }
 
 
@@ -146,7 +148,7 @@ p {
 
 
 /* Responsive adjustments */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     .background{
         width: 100%;
@@ -175,7 +177,7 @@ p {
     background: none;
     outline: none;
     border: none;
-    margin: 2rem 2rem 1rem 33rem;
+    margin: 2rem 2rem 1rem auto;
     }
 
     .hamburger .bar, .hamburger:after, .hamburger:before  {
@@ -202,18 +204,23 @@ p {
 
     .mobile-nav {
     position: absolute;
-    display: block;
+    display: none;
+    backdrop-filter: blur(10px);
     left: 100%;
     width: 100%;
     min-height: 30vh;
     z-index: 98;
     padding-top: 2rem;
-    background: linear-gradient( #443E3E, #1B1B1B);
+    background: rgba(10, 10, 10, 0.3);
     transition: 0.4s;
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+
     }
 
     .mobile-nav.is-active {
     left: 0;
+    transition: 0.4s;
+    display: block;
     }
 
     .mobile-nav a{
@@ -232,12 +239,10 @@ p {
     
     }
 
-    .mobile-nav a:hover{
-    background-color: #424242;
-    }
+    
 
     h1 { font-size: 4rem; }
-    p { font-size: 2rem; }
+    p { font-size: 1.8rem; }
 
    .back-text{
     display: none;
@@ -245,15 +250,34 @@ p {
 
    .hero{
     margin: 4rem 3rem 0 0;
-    min-height: 932px;
+
     transform: translateX(-3rem);
    }
 
    .earth{
     padding-top: 21rem;
+    margin: auto;
    }
 
    .arrow{
-    padding-left: 11rem;
+    padding-left: 11vh;
    }
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 2.2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+    .arrow{
+        padding-left: .5rem;
+    }
+
+    .earth{
+        padding-left: 0;
+        padding-top: 2rem;
+    }
 }
