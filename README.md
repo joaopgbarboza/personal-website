@@ -1,4 +1,4 @@
-This is just an experimental personal website project to practice web development
+CyBearShield - my personal website
 
 Tools used:
 #HTML 
