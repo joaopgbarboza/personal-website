@@ -267,6 +267,7 @@ p {
    }
 
    .arrow{
+    display: none;
     padding-left: 11vh;
    }
 }
@@ -296,6 +297,7 @@ p {
         padding-left: 0;
         margin-left: 86%;
         margin-top: 18rem;
+        display: none;
     }
 
     .earth {
