@@ -213,7 +213,7 @@ p {
     min-height: 30vh;
     z-index: 98;
     padding-top: 2rem;
-    background: rgba(10, 10, 10, 0.3);
+    background: rgba(124, 0, 196, 0.7);
     transition: 0.4s;
     box-shadow: 0 10px 10px rgba(0,0,0,.2);
 
@@ -257,7 +257,7 @@ p {
    }
 
    .earth{
-    padding-top: 21rem;
+    padding-top: 15rem;
     margin: auto;
     overflow: hidden;
    }
@@ -271,6 +271,7 @@ p {
 
     .background{
         overflow: hidden;
+        background-size: 400% 400%;
     }
 
     .hero {
