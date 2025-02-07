@@ -265,6 +265,10 @@ p {
 }
 
 @media (max-width: 500px){
+    .hero {
+        margin: 4rem 1rem 0 0 ;
+    }
+
     h1{
         font-size: 2.2rem;
     }
@@ -273,11 +277,14 @@ p {
     }
 
     .arrow{
-        padding-left: .5rem;
+        padding-left: 0;
+        margin-left: 21rem;
+        margin-top: 18rem;
     }
 
     .earth{
         padding-left: 0;
-        padding-top: 2rem;
+        padding-top: 9rem;
+        max-width: 40rem;
     }
 }
