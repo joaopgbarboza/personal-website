@@ -124,6 +124,7 @@ a:hover{
     border-radius: 4rem;
     background: linear-gradient( #443E3E, #1B1B1B);
     min-height: 634px;
+    box-shadow: 0 15px 20px rgba(0,0,0,.5);
 }
 
 
