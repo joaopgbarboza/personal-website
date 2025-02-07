@@ -4,6 +4,8 @@
     box-sizing: border-box;
     
 }
+
+
 /* Full-screen background */
 .background {
     position: fixed;
@@ -39,6 +41,7 @@
 
 
 .arrow{
+    position: absolute;
     margin-top: 14rem;
     margin-left: 1.7rem;
 }
@@ -259,7 +262,7 @@ p {
 
    .earth{
     padding-top: 15rem;
-    margin: auto;
+
     overflow: hidden;
    }
 
@@ -273,6 +276,8 @@ p {
     .background{
         overflow: hidden;
         background-size: 400% 400%;
+        width: 100%;
+        height: 100%;
     }
 
     .hero {
@@ -293,10 +298,10 @@ p {
         margin-top: 18rem;
     }
 
-    .earth{
-        padding-left: 0;
-        padding-top: 50%;
-        max-width: 40rem;
+    .earth {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 
     .container-earth{
