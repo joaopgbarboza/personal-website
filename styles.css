@@ -37,6 +37,7 @@
     
 }
 
+
 .arrow{
     margin-top: 14rem;
     margin-left: 1.7rem;
@@ -153,6 +154,7 @@ p {
     .background{
         width: 100%;
         height: 100vh;
+        
     }
 
     .nav-links {
@@ -257,6 +259,7 @@ p {
    .earth{
     padding-top: 21rem;
     margin: auto;
+    overflow: hidden;
    }
 
    .arrow{
@@ -265,12 +268,18 @@ p {
 }
 
 @media (max-width: 500px){
+
+    .background{
+        overflow: hidden;
+    }
+
     .hero {
         margin: 4rem 1rem 0 0 ;
     }
 
     h1{
-        font-size: 2.2rem;
+        font-size: 2.4rem;
+        margin-left: .8rem;
     }
     p {
         font-size: 1rem;
@@ -278,13 +287,20 @@ p {
 
     .arrow{
         padding-left: 0;
-        margin-left: 21rem;
+        margin-left: 86%;
         margin-top: 18rem;
     }
 
     .earth{
         padding-left: 0;
-        padding-top: 9rem;
+        padding-top: 50%;
         max-width: 40rem;
     }
+
+    .container-earth{
+        overflow: hidden;
+        border-radius: 0 0 4rem 0;
+    }
+
+    
 }
