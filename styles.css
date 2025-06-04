@@ -110,7 +110,7 @@ li{
 a {
     text-decoration: none;
     cursor: pointer;
-    padding-left: 2.5rem;
+    margin: 0 1.4rem;
     color: white;
 }
 
