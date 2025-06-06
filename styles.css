@@ -54,6 +54,9 @@
 
 .content {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: white;
     font-family: 'Arial', sans-serif;
     text-align: center;
@@ -122,6 +125,9 @@ a:hover{
 
 
 .hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
     margin: 0 5rem;
     max-width: 96%;
     border-style: none;
@@ -129,25 +135,27 @@ a:hover{
     background: linear-gradient( #443E3E, #1B1B1B);
     min-height: 634px;
     box-shadow: 0 15px 20px rgba(0,0,0,.5);
+    height: 100vh;
 }
 
 
 
 h1 {
     font-size: 6rem;
-    padding-top: 1rem;
+    margin-top: 2.5rem;
 }
 
 p {
     font-size: 1.5rem;
     color: #726d6d;
-    padding-top: .5rem;
+    margin-top: .9rem;
+    margin-bottom: 8rem;
 }
 
 .earth{
+    transform: translateY(4px);
     max-width: 40rem;
-    margin-top: 3.8rem;
-    transform: translateY(.3rem);
+    justify-content: flex-end;
 }
 
 
@@ -170,10 +178,6 @@ p {
         margin-left: 22rem;
     }
 
-    .background{
-        width: 100%;
-        height: 100%;
-    }
 
     .hamburger{
     position: relative;
@@ -249,7 +253,7 @@ p {
     
 
     h1 { font-size: 4rem; }
-    p { font-size: 1.8rem; }
+    p { font-size: 1.8rem; margin-bottom: 10rem; }
 
    .back-text{
     display: none;
@@ -262,8 +266,7 @@ p {
    }
 
    .earth{
-    padding-top: 15rem;
-
+    object-fit: contain ;
     overflow: hidden;
    }
 
@@ -273,7 +276,7 @@ p {
    }
 }
 
-@media (max-width: 500px){
+@media (max-width: 596px){
 
     .background{
         overflow: hidden;
@@ -284,11 +287,11 @@ p {
 
     .hero {
         margin: 4rem 1rem 0 0 ;
+        height:70vh;
     }
 
     h1{
         font-size: 2.4rem;
-        margin-left: .8rem;
     }
     p {
         font-size: 1rem;
