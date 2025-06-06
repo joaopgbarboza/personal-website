@@ -43,7 +43,7 @@
 
 .arrow{
     position: absolute;
-    margin-top: 14rem;
+    margin-top: 40vh;
     margin-left: 1.7rem;
 }
 
@@ -69,7 +69,7 @@
 }
 
 .logo{
-    max-width: 7rem;
+    max-width: 8rem;
 }
 
 .logo:hover{
