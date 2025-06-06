@@ -149,7 +149,7 @@ p {
     font-size: 1.5rem;
     color: #726d6d;
     margin-top: .9rem;
-    margin-bottom: 8rem;
+
 }
 
 .earth{
@@ -253,7 +253,7 @@ p {
     
 
     h1 { font-size: 4rem; }
-    p { font-size: 1.8rem; margin-bottom: 10rem; }
+    p { font-size: 1.8rem;}
 
    .back-text{
     display: none;
