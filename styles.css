@@ -15,9 +15,10 @@
     height: 100vh;
     z-index: -1;
     overflow-x: hidden;
-    background: linear-gradient(120deg, #FF00CC, #8400FF, #00FFB2);
+    /*background: linear-gradient(120deg, #FF00CC, #8400FF, #00FFB2);*/
+    background: linear-gradient(120deg, #00FFB2, #8400FF, #FF00CC );
     background-size: 300% 300%;
-    animation: gradientAnimation 10s infinite linear;
+    animation: gradientAnimation 6s infinite linear;
 }
 
 ::selection{
