@@ -255,6 +255,8 @@ p {
     h1 { font-size: 4rem; }
     p { font-size: 1.8rem;}
 
+ 
+
    .back-text{
     display: none;
    }
@@ -263,6 +265,7 @@ p {
     margin: 4rem 3rem 0 0;
     height: 80vh;
     transform: translateX(-3rem);
+    object-fit: contain;
    }
 
    .earth{
@@ -308,7 +311,7 @@ p {
     .earth {
         max-width: 100%;
         height: auto;
-        object-fit: contain;
+        border-radius: 4rem;
     }
 
     .container-earth{
