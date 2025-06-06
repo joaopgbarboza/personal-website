@@ -15,14 +15,15 @@
     height: 100vh;
     z-index: -1;
     overflow-x: hidden;
-    
-    /* Smooth gradient animation */
     background: linear-gradient(120deg, #FF00CC, #8400FF, #00FFB2);
     background-size: 300% 300%;
     animation: gradientAnimation 10s infinite linear;
 }
 
-/* Keyframes for smooth color transitions */
+::selection{
+    color: #443E3E;
+}
+
 @keyframes gradientAnimation {
     0%   { background-position: 0% 50%; }
     50%  { background-position: 100% 50%; }
