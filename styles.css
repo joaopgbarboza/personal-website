@@ -17,8 +17,8 @@
     overflow-x: hidden;
     /*background: linear-gradient(120deg, #FF00CC, #8400FF, #00FFB2);*/
     background: linear-gradient(120deg, #00FFB2, #8400FF, #FF00CC );
-    background-size: 300% 300%;
-    animation: gradientAnimation 6s infinite linear;
+    background-size: 400% 300%;
+    animation: gradientAnimation 10s infinite linear;
 }
 
 ::selection{
@@ -34,24 +34,27 @@
 
 .back-text{
     text-align: right;
-    font-size: 8rem;
-    color: #fff;
-    transform: translateY(-2rem);
-    font-weight: 100;
-    
+    font-size: 10rem;
+    color: #8400FF;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: .1;
+    animation: rotate 6s linear infinite;
 }
 
+@keyframes rotate {
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 .arrow{
     position: absolute;
-    margin-top: 40vh;
+    margin-top: 60vh;
     margin-left: 1.7rem;
+    opacity: .4;
 }
-
-
-
-/* Content styling */
-
 
 .content {
     position: relative;
@@ -103,8 +106,7 @@ nav{
 ul{
     display: flex;
     padding: 0 9rem 1rem 9rem;
-    margin-top: 4rem ;
-    
+    margin-top: 4rem;
 }
 
 li{
@@ -124,7 +126,6 @@ a:hover{
 }
 
 
-
 .hero{
     position: relative;
     display: flex;
@@ -138,7 +139,6 @@ a:hover{
     box-shadow: 0 15px 20px rgba(0,0,0,.5);
     height: 85vh;
 }
-
 
 
 h1 {
@@ -157,8 +157,8 @@ p {
 .earth{
     transform: translateY(4px);
     max-width: 40rem;
+    object-position: bottom;
 }
-
 
 
 
