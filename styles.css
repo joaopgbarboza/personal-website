@@ -151,11 +151,36 @@ h1 {
 p {
     font-size: 1.5rem;
     color: #726d6d;
-
 }
 
+.cv-btn{
+    padding: 10px 15px 10px 15px;
+    margin: 30px 15px 0 15px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: #1b1b1b38;
+    color: #fff;
+    cursor: pointer;
+    min-width:30%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cv-btn:hover{
+    color: #fbff00;
+    background-color: #1b1b1b51;
+    box-shadow: 2px 2px 20px 2px rgb(219, 219, 219, .4);
+}
+
+.cv-btn:active{
+    background-color: #fbff00;
+}
+
+    
+
 .earth{
-    transform: translateY(4px);
+
     max-width: 40rem;
     object-position: bottom;
 }
@@ -300,7 +325,7 @@ p {
     }
     p {
         font-size: 1.3rem;
-        margin-left: 1rem;
+        margin: .5rem 0 1rem 0;
     }
 
     .arrow{
@@ -309,6 +334,19 @@ p {
         margin-top: 18rem;
         display: none;
     }
+
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cv-btn{
+        font-size: .7rem;
+        text-align: center;
+        margin: 15px auto;
+    }
+  
 
     .earth {
         max-width: 100%;
