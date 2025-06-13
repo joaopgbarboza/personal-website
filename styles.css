@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     
+    
+}
+body{
+    overflow-x: hidden;
 }
 
 
@@ -13,7 +17,6 @@
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    overflow-x: hidden;
     background: linear-gradient(120deg, #00FFB2, #8400FF, #FF00CC );
     background-size: 400% 300%;
     animation: gradientAnimation 10s infinite linear;
@@ -235,6 +238,7 @@ hr:after {
     left: calc(110px * 9);
     height: 45px;
     animation: scroll 15s infinite linear;
+    
 }
 
 @keyframes scroll {
