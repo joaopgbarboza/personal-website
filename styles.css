@@ -500,6 +500,7 @@ hr:after {
         font-size: .7rem;
         text-align: center;
         margin: 15px auto;
+        min-width: 50%;
     }
   
 
