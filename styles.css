@@ -321,6 +321,7 @@ hr:after {
     filter: brightness(65%);
     margin-bottom: 15px;
     box-shadow: 0 10px 15px rgba(0,0,0,.4);
+    transition: transform 200ms;
 }
 
 .card img:hover{
@@ -427,58 +428,58 @@ hr:after {
 
 
     .hamburger{
-    position: relative;
-    display: block;
-    width: 35px;
-    cursor: pointer;
-    appearance: none;
-    background: none;
-    outline: none;
-    border: none;
-    margin: 2rem 2rem 1rem auto;
+        position: relative;
+        display: block;
+        width: 35px;
+        cursor: pointer;
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+        margin: 2rem 2rem 1rem auto;
     }
 
     .hamburger .bar, .hamburger:after, .hamburger:before  {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 5px;
-    background-color: #ffffff;
-    margin: 6px 0px;
-    transition: 0.4s;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #ffffff;
+        margin: 6px 0px;
+        transition: 0.4s;
     }
 
     .hamburger.is-active:before {
-    transform: rotate(-45deg) translate(-8px, 6px);
+        transform: rotate(-45deg) translate(-8px, 6px);
     }
 
     .hamburger.is-active:after {
-    transform: rotate(45deg) translate(-9px, -8px);
+        transform: rotate(45deg) translate(-9px, -8px);
     }
 
     .hamburger.is-active .bar {
-    opacity: 0;
+        opacity: 0;
     }
 
     .mobile-nav {
-    position: absolute;
-    display: none;
-    backdrop-filter: blur(10px);
-    left: 100%;
-    width: 100%;
-    min-height: 30vh;
-    z-index: 98;
-    padding-top: 2rem;
-    background: rgba(46, 46, 46, 0.7);
-    transition: 0.4s;
-    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+        position: absolute;
+        display: none;
+        backdrop-filter: blur(10px);
+        left: 100%;
+        width: 100%;
+        min-height: 30vh;
+        z-index: 98;
+        padding-top: 2rem;
+        background: rgba(46, 46, 46, 0.7);
+        transition: 0.4s;
+        box-shadow: 0 10px 10px rgba(0,0,0,.2);
 
     }
 
     .mobile-nav.is-active {
-    left: 0;
-    transition: 0.4s;
-    display: block;
+        left: 0;
+        transition: 0.4s;
+        display: block;
     }
 
     .mobile-nav a{
@@ -496,30 +497,27 @@ hr:after {
         color: #fff;
     
     }
-
     
 
     h1 { font-size: 4rem; }
     p { font-size: 1.8rem;}
 
- 
 
    .back-text{
-    display: none;
+        display: none;
    }
 
    .hero{
-    margin: 4rem 3rem 0 0;
-    padding-bottom:3rem ;
-    transform: translateX(-3rem);
-    object-fit: contain;
+        margin: 4rem 3rem 0 0;
+        padding-bottom:3rem ;
+        transform: translateX(-3rem);
+        object-fit: contain;
    }
 
    .earth{
-    object-fit: contain;
-    overflow: hidden;
+        object-fit: contain;
+        overflow: hidden;
    }
-
 
 
     .projects{
@@ -568,9 +566,7 @@ hr:after {
         text-align: center;
         min-width: 250px;
     }
-
 }
-
 
 
 @media (max-width: 719px){
@@ -587,19 +583,19 @@ hr:after {
 
     .hero {
         margin: 4rem 1rem 0 0 ;
-        height:90%;
+        height: 90%;
     }
 
     .content{
         margin-left: 25px;
     }
-
     
 
     h1{
         font-size: 2.2rem;
         margin-left: 1rem;
     }
+
     p {
         font-size: 1.3rem;
         margin: .5rem 0 1rem .6rem;
@@ -618,7 +614,6 @@ hr:after {
         min-width: 50%;
     }
   
-
     .earth {
         max-width: 100%;
         height: auto;
@@ -629,8 +624,6 @@ hr:after {
         border-radius: 0 0 4rem 0;
     }
 
-
-
     .session-title{
         font-size: .8rem;
     }
@@ -640,8 +633,6 @@ hr:after {
         flex-direction: column;
         padding-bottom: 40px;
     }
-
-
 
     .card {
         width: 100%;
@@ -658,13 +649,9 @@ hr:after {
         margin-bottom: 0;
     }
 
-
-
     .back-text2{
         display: none;
     }
-
-
 
 }
 
