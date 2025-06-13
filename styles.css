@@ -478,6 +478,10 @@ hr:after {
         height:90%;
     }
 
+    .tech{
+        left: calc(80px * 9);
+    }
+
     h1{
         font-size: 2.2rem;
         margin-left: 1rem;
@@ -485,13 +489,6 @@ hr:after {
     p {
         font-size: 1.3rem;
         margin: .5rem 0 1rem .6rem;
-    }
-
-    .arrow{
-        padding-left: 0;
-        margin-left: 86%;
-        margin-top: 18rem;
-        display: none;
     }
 
 
@@ -531,6 +528,8 @@ hr:after {
     .card {
         width: 100%;
     }
+
+
 
 
     
