@@ -489,10 +489,12 @@ hr:after {
 
 
 @media (max-width: 719px){
-
+    body, html{
+        overflow-x: hidden;
+    }
 
     .background{
-        overflow-x: hidden;
+        
         background-size: 400% 400%;
         width: 100%;
         height: 100%;
