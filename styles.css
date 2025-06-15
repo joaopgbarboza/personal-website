@@ -26,7 +26,7 @@ body{
 }
 
 ::selection{
-    color: hsl(259, 13%, 28%);
+    color: hsl(240, 15%, 5%);
 }
 
 @keyframes gradientAnimation {
@@ -388,7 +388,7 @@ hr:after {
 
 .about-p p{
     font-family: system-ui;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #fff;
     opacity: .85;
 }
