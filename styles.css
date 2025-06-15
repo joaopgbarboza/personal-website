@@ -20,13 +20,13 @@ body{
     z-index: -1;
     background-image: url("./assets/faded_gallery-b3VJdDhNpyU-unsplash.jpg");
     /* background: linear-gradient(120deg, #00FFB2, #8400FF, #FF00CC ); */
-    background-position-y: top 20%;
+
 
     /* animation: gradientAnimation 10s infinite linear; */
 }
 
 ::selection{
-    color: hsl(243, 26%, 15%);
+    color: hsl(259, 13%, 28%);
 }
 
 @keyframes gradientAnimation {
@@ -174,7 +174,7 @@ p {
 .cv-btn:hover{
     color: #fbff00;
     background-color: #1b1b1b51;
-    box-shadow: 2px 2px 20px 2px rgb(219, 219, 219, .4);
+    box-shadow: 2px 2px 20px 2px rgb(219, 219, 219, .3);
 }
 
 .cv-btn:active{
@@ -439,11 +439,6 @@ hr:after {
 /* Responsive adjustments */
 @media (max-width: 976px) {
 
-    .background{
-        width: 100%;
-        height: 100vh;
-        
-    }
 
     .nav-links {
         display: none;
@@ -602,13 +597,6 @@ hr:after {
 @media (max-width: 719px){
     body, html{
         overflow-x: hidden;
-    }
-
-    .background{
-        
-        background-size: 400% 400%;
-        width: 100%;
-        height: 100%;
     }
 
     .hero {
