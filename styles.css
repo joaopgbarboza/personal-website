@@ -20,7 +20,7 @@ body{
     z-index: -1;
     background-image: url("./assets/faded_gallery-b3VJdDhNpyU-unsplash.jpg");
     /* background: linear-gradient(120deg, #00FFB2, #8400FF, #FF00CC ); */
-    background-size:125%;
+    background-position-y: top 20%;
 
     /* animation: gradientAnimation 10s infinite linear; */
 }
@@ -35,27 +35,6 @@ body{
     100% { background-position: 0% 50%; }
 }
 
-.back-text{
-    text-align: right;
-    font-size: 10rem;
-    color: #8400FF;
-    position: fixed;
-    top: 0;
-    right: 0;
-    opacity: .3;
-    animation: rotate 6s linear infinite;
-}
-
-.back-text2{
-    text-align: right;
-    font-size: 9rem;
-    color: #00FFB2;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    opacity: .3;
-    animation: rotate 6s linear infinite;
-}
 
 @keyframes rotate {
     to{
