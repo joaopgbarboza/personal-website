@@ -18,13 +18,15 @@ body{
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background: linear-gradient(120deg, #00FFB2, #8400FF, #FF00CC );
-    background-size: 400% 300%;
-    animation: gradientAnimation 10s infinite linear;
+    background-image: url("./assets/faded_gallery-b3VJdDhNpyU-unsplash.jpg");
+    /* background: linear-gradient(120deg, #00FFB2, #8400FF, #FF00CC ); */
+    background-size:125%;
+
+    /* animation: gradientAnimation 10s infinite linear; */
 }
 
 ::selection{
-    color: #443E3E;
+    color: hsl(243, 26%, 15%);
 }
 
 @keyframes gradientAnimation {
@@ -120,7 +122,7 @@ ul{
 li{
     list-style: none;
     font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui;
     
 }
 a {
@@ -142,11 +144,28 @@ a:hover{
     display: flex;
     justify-content:center;
     margin: 0 5rem .5rem 5rem;
+    border: hsl(259, 13%, 28%) 1px solid;
+    position: relative;
+    background: hsl(from hsl(243, 26%, 15%) h s l / 0.8);
+    backdrop-filter: blur(12px);
 
-    border-style: none;
     border-radius: 40px;
-    background: linear-gradient(130deg, #443E3E, #1B1B1B);
+    /* background: radial-gradient(circle at 50% 250%, hsl(259, 13%, 28%), hsl(255, 21%, 11%)) padding-box;  */
+    /* background: linear-gradient(130deg, #443E3E, #1B1B1B); */
     box-shadow: 0 15px 20px rgba(0,0,0,.5);
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border-radius: inherit;
+    border: 1px solid transparent;
+    background: linear-gradient(hsl(259, 13%, 28%),  hsl(255, 21%, 11%)) border-box;
+    mask: linear-gradient(black, black) border-box,
+    linear-gradient(black, black) padding-box;
+    mask-composite: subtract;
 }
 
 
@@ -159,7 +178,7 @@ h1 {
 
 p {
     font-size: 1.5rem;
-    color: #726d6d;
+    color: #8a8585;
 }
 
 .cv-btn{
@@ -289,7 +308,7 @@ hr:after {
 
 .title{
     font-size: 1.2rem;
-    font-family: 'Prosto One', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Prosto One', system-ui, -apple-system;
     margin: 40px auto;
     text-align: center;
     
@@ -310,15 +329,14 @@ hr:after {
 .card{
     margin: 12px 0;
     width: 92%;
-    
 }
+
 .card img{
     border-radius: 20px;
     width: 100%;
     cursor: pointer;
     object-fit: cover;
     height: 220px;
-    filter: brightness(65%);
     margin-bottom: 15px;
     box-shadow: 0 10px 15px rgba(0,0,0,.4);
     transition: transform 200ms;
@@ -326,7 +344,6 @@ hr:after {
 
 .card img:hover{
     transform: scale(1.02);
-    filter: none;
     box-shadow: 0 15px 20px rgba(0,0,0,.3);
 }
 
@@ -339,11 +356,13 @@ hr:after {
     bottom: 0;
     right: 0;
     padding-bottom: 10px;
-    
 }
+
 .text-card-end p{
     font-size: 1.1rem;
     padding-top: 50px;
+    font-family: system-ui;
+    color: #8e8989;
 }
 
 .github{
@@ -381,21 +400,22 @@ hr:after {
 
 .about-p {
     width: 40%;
-    text-align: left;
+    text-align:start;
     align-content: center;
 
 }
 
 .about-p h3{
     color: #00FFB2;
+    font-family: system-ui;
     font-size: 1.5rem;
 }
 
 .about-p p{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.2rem;
+    font-family: system-ui;
+    font-size: 1.1rem;
     color: #fff;
-    opacity: .8;
+    opacity: .85;
 }
 
 
@@ -410,6 +430,11 @@ hr:after {
 .certs img {
     width: 150px;
     border-radius: 0;
+    transition: transform 200ms;
+}
+
+.certs img:hover{
+    transform: scale(1.05);
 }
 
 
