@@ -329,6 +329,11 @@ hr:after {
     font-family: 'Prosto One', system-ui, -apple-system;
     margin: 40px auto;
     text-align: center;
+    scale: .8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
     
 }
 
