@@ -122,7 +122,7 @@ a:hover{
     margin: 0 5rem .5rem 5rem;
     border: hsl(259, 13%, 28%) 1px solid;
     position: relative;
-    background: hsl(from hsl(243, 26%, 15%) h s l / 0.8);
+    background: hsl(from hsl(240, 15%, 5%) h s l / 0.8);
     backdrop-filter: blur(12px);
     border-radius: 40px;
     /* background: radial-gradient(circle at 50% 250%, hsl(259, 13%, 28%), hsl(255, 21%, 11%)) padding-box;  */
@@ -439,7 +439,6 @@ hr:after {
 /* Responsive adjustments */
 @media (max-width: 976px) {
 
-
     .nav-links {
         display: none;
     }
@@ -492,7 +491,7 @@ hr:after {
         min-height: 30vh;
         z-index: 98;
         padding-top: 2rem;
-        background: hsl(243, 26%, 15%, 0.8);
+        background: hsl(240, 15%, 5%, .8);
         transition: 0.4s;
         box-shadow: 0 10px 10px rgba(0,0,0,.2);
 
@@ -589,7 +588,6 @@ hr:after {
         min-width: 250px;
     }
 }
-
 
 
 
