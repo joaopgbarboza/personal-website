@@ -510,7 +510,19 @@ hr:after {
 }
 
 
-@media (max-width: 1100px){
+@media (min-height: 900px){
+
+    .tech-icons{
+        margin: 25px 0 25px 150px;
+        mask-image: linear-gradient(
+        to right, 
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 30%,
+        rgba(0, 0, 0, 1) 60%,
+        rgba(0, 0, 0, 0)
+    );
+    }
+
     .certs{
         flex-wrap: wrap;
         padding-bottom: 0;
