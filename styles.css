@@ -771,6 +771,15 @@ hr:after {
         display: none;
     }
 
+    .certs{
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+
+    .certs img{
+        margin-bottom: 30px;
+    }
+
 }
 
 
