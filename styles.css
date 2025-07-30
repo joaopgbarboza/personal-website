@@ -203,9 +203,9 @@ p {
 }
 
 .cv-btn:hover{
-    color: #fbff00;
-    background-color: #1b1b1b51;
-    box-shadow: 2px 2px 20px 2px rgb(219, 219, 219, .3);
+    color: #1b1b1b;
+    background-color: #fbff00;
+    box-shadow: 2px 2px 20px 2px rgb(219, 219, 219, .1);
 }
 
 .cv-btn:active{
